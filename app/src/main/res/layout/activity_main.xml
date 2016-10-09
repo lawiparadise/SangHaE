@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.law.sanghae.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/stamp"
+                android:layout_weight="1"
+                android:id="@+id/img_stamp"
+                android:layout_width="wrap_content"
+                android:layout_height="93dp" />
+            <ImageView
+                android:background="@drawable/point"
+                android:layout_weight="1"
+                android:id="@+id/img_point"
+                android:layout_width="wrap_content"
+                android:layout_height="93dp" />
+            <ImageView
+                android:background="@drawable/search"
+                android:layout_weight="1"
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="93dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/samsung"
+        android:id="@+id/layout_main_top"
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <Button
+            android:background="@drawable/btn_menu"
+            android:id="@+id/btn_main"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_above="@id/layout_main_bottom"
+        android:layout_below="@id/layout_main_top"
+        android:id="@+id/layout_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:divider="#ffffff"
+            android:dividerHeight="8dp"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</RelativeLayout>
